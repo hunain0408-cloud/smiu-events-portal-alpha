@@ -1,0 +1,19 @@
+/* ==========================================================
+   SMIU Events Portal - Custom Stylesheet
+   Loaded after Bootstrap 5.3.3 to extend and override it.
+   ========================================================== */
+
+/* ---------- 1. Colour theme (CSS variables) ---------- */
+:root {
+  --smiu-primary: #7a1f2b;        /* SMIU maroon */
+  --smiu-primary-dark: #5a1520;
+  --smiu-secondary: #1f5c3a;      /* SMIU green */
+  --smiu-accent: #f4b942;         /* gold highlight */
+  --smiu-light: #f8f5f2;
+  --smiu-dark: #1e1e24;
+  --smiu-text-muted: #6c6f75;
+  --smiu-radius: 14px;
+  --smiu-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --smiu-shadow-hover: 0 14px 30px rgba(122, 31, 43, 0.22);
+  --smiu-transition: all 0.3s ease;
+}
