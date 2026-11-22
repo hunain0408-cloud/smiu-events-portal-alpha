@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Blood Donation Drive">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#922b21"/><stop offset="1" stop-color="#e74c3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <circle cx="710" cy="70" r="140" fill="#ffffff" opacity="0.08"/>
+  <circle cx="60" cy="420" r="110" fill="#ffffff" opacity="0.06"/>
+  <g transform="translate(340.0 115.0) scale(5)" fill="none" stroke="#ffffff"
+     stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-3a4.5 4.5 0 0 1 8 3c0 6-8 11-8 11z M12 9v6 M9 12h6"/>
+  </g>
+  <text x="400.0" y="300.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-size="38" font-weight="700" fill="#ffffff">Blood Donation Drive</text>
+  <text x="400.0" y="337.0" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-size="20" letter-spacing="4" fill="#ffffff" opacity="0.85">COMMUNITY</text>
+</svg>

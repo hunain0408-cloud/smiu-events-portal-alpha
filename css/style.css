@@ -119,6 +119,39 @@ body {
   transform: translateY(-2px);
 }
 
+/* ---------- 7. Cards with hover effect ---------- */
+.event-card,
+.society-card,
+.team-card {
+  border: none;
+  border-radius: var(--smiu-radius);
+  overflow: hidden;
+  box-shadow: var(--smiu-shadow);
+  transition: var(--smiu-transition);
+}
+
+.event-card:hover,
+.society-card:hover,
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--smiu-shadow-hover);
+}
+
+.event-card .card-img-top,
+.society-card .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* ---------- 8. Badges ---------- */
+.badge-date {
+  background-color: var(--smiu-primary);
+}
+
+.badge-category {
+  background-color: var(--smiu-secondary);
+}
+
 /* ---------- 9. Carousel ---------- */
 .featured-carousel .carousel-item img {
   max-height: 460px;
