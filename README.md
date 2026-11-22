@@ -53,3 +53,18 @@ css/style.css     custom theme (CSS variables) and component styles
 images/           original SVG artwork made by the team
 screenshots/      screenshots used in this README
 ```
+
+## Teamwork Problem: Merge Conflict in style.css
+
+All three of us shared one stylesheet, `css/style.css`. Ubaid added the styles for the event
+details page (section 13) and Tasmia added the styles for the forms and the contact page
+(sections 14 and 15) at the same place, at the end of the file, on separate branches. After
+Ubaid's Pull Request was merged into `main`, Tasmia merged the latest `main` into her branch
+before opening her Pull Request, and Git reported a merge conflict in `style.css` because it
+could not decide which new block should come first. Tasmia opened the file and found the
+conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`). Instead of deleting either change, she
+kept both blocks, placed the
+event details styles before the form and contact styles, removed the markers and checked every
+page in the browser. She then committed the resolved file, and Hunain reviewed and merged the
+Pull Request. We learned to pull the latest `main` before starting work and to add new CSS in
+clearly numbered sections.
