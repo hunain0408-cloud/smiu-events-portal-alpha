@@ -223,3 +223,38 @@ body {
   background-color: var(--smiu-primary);
   color: #ffffff;
 }
+
+/* ---------- 14. Forms (register and contact) ---------- */
+.form-panel {
+  background-color: #ffffff;
+  border-radius: var(--smiu-radius);
+  box-shadow: var(--smiu-shadow);
+  padding: 2rem;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: var(--smiu-primary);
+  box-shadow: 0 0 0 0.2rem rgba(122, 31, 43, 0.2);
+}
+
+.form-check-input:checked {
+  background-color: var(--smiu-primary);
+  border-color: var(--smiu-primary);
+}
+
+/* ---------- 15. Contact page ---------- */
+.map-placeholder {
+  width: 100%;
+  border-radius: var(--smiu-radius);
+  box-shadow: var(--smiu-shadow);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  margin: 1.5rem auto 0;
+  border-radius: 50%;
+  border: 4px solid var(--smiu-accent);
+}

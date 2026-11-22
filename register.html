@@ -38,7 +38,134 @@
 
   <!-- ===== Main content ===== -->
   <main>
-    <!-- Page content coming soon -->
+    <!-- ===== Page header ===== -->
+    <section class="page-header text-center">
+      <div class="container">
+        <h1 class="fw-bold">Event Registration</h1>
+        <p class="lead mb-0">Fill in the form below to reserve your seat.</p>
+      </div>
+    </section>
+
+    <!-- ===== Registration form ===== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="form-panel">
+          <form>
+            <div class="row g-3">
+              <!-- Personal details -->
+              <div class="col-12 col-lg-6">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="e.g. Ali Khan" required>
+              </div>
+              <div class="col-12 col-lg-6">
+                <label for="rollNumber" class="form-label">Roll Number</label>
+                <input type="text" class="form-control" id="rollNumber" placeholder="e.g. BSSE-23F-001" required>
+              </div>
+              <div class="col-12 col-lg-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              </div>
+              <div class="col-12 col-lg-6">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="03XX-XXXXXXX" required>
+              </div>
+
+              <!-- Department and event -->
+              <div class="col-12 col-lg-6">
+                <label for="department" class="form-label">Department</label>
+                <select class="form-select" id="department" required>
+                  <option value="" selected disabled>Choose your department</option>
+                  <option>Software Engineering</option>
+                  <option>Computer Science</option>
+                  <option>Business Administration</option>
+                  <option>Media Studies</option>
+                  <option>Education</option>
+                  <option>Environmental Sciences</option>
+                </select>
+              </div>
+              <div class="col-12 col-lg-6">
+                <label for="eventSelect" class="form-label">Event</label>
+                <select class="form-select" id="eventSelect" required>
+                  <option value="" selected disabled>Choose an event</option>
+                    <option>Tech Innovation Summit</option>
+                    <option>Annual Sports Gala</option>
+                    <option>Cultural Night</option>
+                    <option>Startup Pitch Competition</option>
+                    <option>Inter-University Debate</option>
+                    <option>Blood Donation Drive</option>
+                    <option>AI and Data Science Workshop</option>
+                    <option>Photography Exhibition</option>
+                </select>
+              </div>
+
+              <!-- Year of study -->
+              <div class="col-12 col-lg-6">
+                <fieldset>
+                  <legend class="form-label fs-6">Year of Study</legend>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="year" id="year1" value="1" required>
+                    <label class="form-check-label" for="year1">1st</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="year" id="year2" value="2">
+                    <label class="form-check-label" for="year2">2nd</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="year" id="year3" value="3">
+                    <label class="form-check-label" for="year3">3rd</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="year" id="year4" value="4">
+                    <label class="form-check-label" for="year4">4th</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <!-- Interests -->
+              <div class="col-12 col-lg-6">
+                <fieldset>
+                  <legend class="form-label fs-6">Interests</legend>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="intTech" value="Technology">
+                    <label class="form-check-label" for="intTech">Technology</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="intSports" value="Sports">
+                    <label class="form-check-label" for="intSports">Sports</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="intArts" value="Arts">
+                    <label class="form-check-label" for="intArts">Arts</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="intBusiness" value="Business">
+                    <label class="form-check-label" for="intBusiness">Business</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <!-- Message -->
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4"
+                          placeholder="Anything you would like the organisers to know?"></textarea>
+              </div>
+
+              <!-- Terms and submit -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="terms" required>
+                  <label class="form-check-label" for="terms">I agree to the event rules and terms.</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-smiu px-5">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ===== Footer ===== -->
