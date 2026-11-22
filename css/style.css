@@ -205,6 +205,25 @@ body {
   }
 }
 
+/* ---------- 13. Event details page ---------- */
+.event-banner {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--smiu-radius);
+  box-shadow: var(--smiu-shadow);
+}
+
+.info-list .list-group-item i {
+  color: var(--smiu-primary);
+  margin-right: 0.5rem;
+}
+
+.schedule-table thead {
+  background-color: var(--smiu-primary);
+  color: #ffffff;
+}
+
 /* ---------- 14. Forms (register and contact) ---------- */
 .form-panel {
   background-color: #ffffff;

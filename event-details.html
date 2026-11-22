@@ -38,7 +38,131 @@
 
   <!-- ===== Main content ===== -->
   <main>
-    <!-- Page content coming soon -->
+    <!-- ===== Page header ===== -->
+    <section class="page-header text-center">
+      <div class="container">
+        <h1 class="fw-bold">Tech Innovation Summit</h1>
+        <p class="lead mb-0">A full day of talks, demos and networking on emerging technologies.</p>
+      </div>
+    </section>
+
+    <!-- ===== Event overview ===== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-8">
+            <img src="images/event-tech-summit.svg" class="event-banner mb-4" alt="Tech Innovation Summit banner">
+            <h2 class="h4">About the Event</h2>
+            <p>The Tech Innovation Summit brings together students, faculty and industry experts to explore
+              artificial intelligence, cloud computing and cyber security. Attend keynote talks, see live
+              product demos and connect with companies looking for interns.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="card event-card">
+              <div class="card-body">
+                <h2 class="h5 card-title">Event Information</h2>
+                <ul class="list-group list-group-flush info-list">
+                  <li class="list-group-item"><i class="bi bi-calendar-event"></i><strong>Date:</strong> 05 Dec 2026</li>
+                  <li class="list-group-item"><i class="bi bi-clock"></i><strong>Time:</strong> 10:00 AM - 4:00 PM</li>
+                  <li class="list-group-item"><i class="bi bi-geo-alt"></i><strong>Venue:</strong> Main Auditorium, SMIU</li>
+                  <li class="list-group-item"><i class="bi bi-cash"></i><strong>Fee:</strong> Free for SMIU students</li>
+                </ul>
+                <button type="button" class="btn btn-smiu w-100 mt-3" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">Register Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Schedule, speakers and rules (accordion) ===== -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">Event Guide</h2>
+        <div class="accordion" id="eventAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#schedulePanel"
+                      aria-expanded="true" aria-controls="schedulePanel">Schedule</button>
+            </h3>
+            <div id="schedulePanel" class="accordion-collapse collapse show" data-bs-parent="#eventAccordion">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>10:00 AM - Opening ceremony and welcome note</li>
+                  <li>11:00 AM - Keynote: The Future of AI in Pakistan</li>
+                  <li>1:00 PM - Lunch break and networking</li>
+                  <li>2:00 PM - Live product demos by student teams</li>
+                  <li>3:30 PM - Panel discussion and closing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#speakersPanel" aria-expanded="false" aria-controls="speakersPanel">Speakers</button>
+            </h3>
+            <div id="speakersPanel" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>Software engineering lead from a Karachi technology company</li>
+                  <li>Cyber security researcher and SMIU alumnus</li>
+                  <li>Faculty members of the Department of Computer Science</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#rulesPanel" aria-expanded="false" aria-controls="rulesPanel">Rules</button>
+            </h3>
+            <div id="rulesPanel" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+              <div class="accordion-body">
+                <ul class="mb-0">
+                  <li>Bring your university ID card for entry.</li>
+                  <li>Registration closes two days before the event.</li>
+                  <li>Seats are limited and given on a first-come, first-served basis.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Registration modal ===== -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header">
+              <h2 class="modal-title h5" id="registerModalLabel">Register for Tech Innovation Summit</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="modalName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="modalName" placeholder="e.g. Ali Khan" required>
+              </div>
+              <div class="mb-3">
+                <label for="modalRoll" class="form-label">Roll Number</label>
+                <input type="text" class="form-control" id="modalRoll" placeholder="e.g. BSSE-23F-001" required>
+              </div>
+              <div class="mb-3">
+                <label for="modalEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="modalEmail" placeholder="name@example.com" required>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-smiu">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- ===== Footer ===== -->
