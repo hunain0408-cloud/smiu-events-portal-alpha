@@ -119,6 +119,18 @@ body {
   transform: translateY(-2px);
 }
 
+/* ---------- 9. Carousel ---------- */
+.featured-carousel .carousel-item img {
+  max-height: 460px;
+  object-fit: cover;
+}
+
+.featured-carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: var(--smiu-radius);
+  padding: 0.75rem 1rem;
+}
+
 /* ---------- 11. Footer ---------- */
 .smiu-footer {
   background-color: var(--smiu-dark);
