@@ -17,3 +17,49 @@
   --smiu-shadow-hover: 0 14px 30px rgba(122, 31, 43, 0.22);
   --smiu-transition: all 0.3s ease;
 }
+
+/* ---------- 2. Base ---------- */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--smiu-dark);
+  background-color: var(--smiu-light);
+}
+
+/* ---------- 3. Navbar ---------- */
+.smiu-navbar {
+  background: linear-gradient(90deg, var(--smiu-primary-dark), var(--smiu-primary));
+}
+
+.smiu-navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.smiu-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0.15rem;
+  border-radius: 8px;
+  transition: var(--smiu-transition);
+}
+
+.smiu-navbar .nav-link:hover,
+.smiu-navbar .nav-link.active {
+  color: var(--smiu-dark);
+  background-color: var(--smiu-accent);
+}
+
+/* ---------- 11. Footer ---------- */
+.smiu-footer {
+  background-color: var(--smiu-dark);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 3rem 0 1.5rem;
+}
+
+.smiu-footer a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.smiu-footer a:hover {
+  color: var(--smiu-accent);
+}
