@@ -17,3 +17,190 @@
   --smiu-shadow-hover: 0 14px 30px rgba(122, 31, 43, 0.22);
   --smiu-transition: all 0.3s ease;
 }
+
+/* ---------- 2. Base ---------- */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--smiu-dark);
+  background-color: var(--smiu-light);
+}
+
+/* ---------- 3. Navbar ---------- */
+.smiu-navbar {
+  background: linear-gradient(90deg, var(--smiu-primary-dark), var(--smiu-primary));
+}
+
+.smiu-navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.smiu-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0.15rem;
+  border-radius: 8px;
+  transition: var(--smiu-transition);
+}
+
+.smiu-navbar .nav-link:hover,
+.smiu-navbar .nav-link.active {
+  color: var(--smiu-dark);
+  background-color: var(--smiu-accent);
+}
+
+/* ---------- 4. Hero section (gradient) ---------- */
+.hero-section {
+  background: linear-gradient(135deg, var(--smiu-primary) 0%, var(--smiu-secondary) 100%);
+  color: #ffffff;
+  padding: 6rem 0 5rem;
+}
+
+.hero-section h1 {
+  font-weight: 800;
+}
+
+/* Smaller banner used at the top of inner pages */
+.page-header {
+  background: linear-gradient(135deg, var(--smiu-primary) 0%, var(--smiu-secondary) 100%);
+  color: #ffffff;
+  padding: 3.5rem 0;
+}
+
+/* ---------- 5. Section spacing and titles ---------- */
+.section-padding {
+  padding: 4.5rem 0;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+  background-color: var(--smiu-accent);
+}
+
+/* ---------- 6. Custom buttons ---------- */
+.btn-smiu {
+  background-color: var(--smiu-primary);
+  color: #ffffff;
+  border: 2px solid var(--smiu-primary);
+  border-radius: 50px;
+  padding: 0.5rem 1.4rem;
+  font-weight: 600;
+  transition: var(--smiu-transition);
+}
+
+.btn-smiu:hover,
+.btn-smiu:focus {
+  background-color: transparent;
+  color: var(--smiu-primary);
+  border-color: var(--smiu-primary);
+}
+
+.btn-accent {
+  background-color: var(--smiu-accent);
+  color: var(--smiu-dark);
+  border-radius: 50px;
+  padding: 0.65rem 1.8rem;
+  font-weight: 700;
+  transition: var(--smiu-transition);
+}
+
+.btn-accent:hover {
+  background-color: #ffffff;
+  color: var(--smiu-primary);
+  transform: translateY(-2px);
+}
+
+/* ---------- 7. Cards with hover effect ---------- */
+.event-card,
+.society-card,
+.team-card {
+  border: none;
+  border-radius: var(--smiu-radius);
+  overflow: hidden;
+  box-shadow: var(--smiu-shadow);
+  transition: var(--smiu-transition);
+}
+
+.event-card:hover,
+.society-card:hover,
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--smiu-shadow-hover);
+}
+
+.event-card .card-img-top,
+.society-card .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* ---------- 8. Badges ---------- */
+.badge-date {
+  background-color: var(--smiu-primary);
+}
+
+.badge-category {
+  background-color: var(--smiu-secondary);
+}
+
+/* ---------- 9. Carousel ---------- */
+.featured-carousel .carousel-item img {
+  max-height: 460px;
+  object-fit: cover;
+}
+
+.featured-carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: var(--smiu-radius);
+  padding: 0.75rem 1rem;
+}
+
+/* ---------- 10. "Why Join" feature columns ---------- */
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--smiu-primary), var(--smiu-secondary));
+}
+
+/* ---------- 11. Footer ---------- */
+.smiu-footer {
+  background-color: var(--smiu-dark);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 3rem 0 1.5rem;
+}
+
+.smiu-footer a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.smiu-footer a:hover {
+  color: var(--smiu-accent);
+}
+
+/* ---------- 12. Small screens ---------- */
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
