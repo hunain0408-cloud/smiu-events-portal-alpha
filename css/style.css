@@ -48,6 +48,77 @@ body {
   background-color: var(--smiu-accent);
 }
 
+/* ---------- 4. Hero section (gradient) ---------- */
+.hero-section {
+  background: linear-gradient(135deg, var(--smiu-primary) 0%, var(--smiu-secondary) 100%);
+  color: #ffffff;
+  padding: 6rem 0 5rem;
+}
+
+.hero-section h1 {
+  font-weight: 800;
+}
+
+/* Smaller banner used at the top of inner pages */
+.page-header {
+  background: linear-gradient(135deg, var(--smiu-primary) 0%, var(--smiu-secondary) 100%);
+  color: #ffffff;
+  padding: 3.5rem 0;
+}
+
+/* ---------- 5. Section spacing and titles ---------- */
+.section-padding {
+  padding: 4.5rem 0;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+  background-color: var(--smiu-accent);
+}
+
+/* ---------- 6. Custom buttons ---------- */
+.btn-smiu {
+  background-color: var(--smiu-primary);
+  color: #ffffff;
+  border: 2px solid var(--smiu-primary);
+  border-radius: 50px;
+  padding: 0.5rem 1.4rem;
+  font-weight: 600;
+  transition: var(--smiu-transition);
+}
+
+.btn-smiu:hover,
+.btn-smiu:focus {
+  background-color: transparent;
+  color: var(--smiu-primary);
+  border-color: var(--smiu-primary);
+}
+
+.btn-accent {
+  background-color: var(--smiu-accent);
+  color: var(--smiu-dark);
+  border-radius: 50px;
+  padding: 0.65rem 1.8rem;
+  font-weight: 700;
+  transition: var(--smiu-transition);
+}
+
+.btn-accent:hover {
+  background-color: #ffffff;
+  color: var(--smiu-primary);
+  transform: translateY(-2px);
+}
+
 /* ---------- 11. Footer ---------- */
 .smiu-footer {
   background-color: var(--smiu-dark);
