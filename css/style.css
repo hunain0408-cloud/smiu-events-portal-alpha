@@ -164,6 +164,20 @@ body {
   padding: 0.75rem 1rem;
 }
 
+/* ---------- 10. "Why Join" feature columns ---------- */
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--smiu-primary), var(--smiu-secondary));
+}
+
 /* ---------- 11. Footer ---------- */
 .smiu-footer {
   background-color: var(--smiu-dark);
@@ -178,4 +192,15 @@ body {
 
 .smiu-footer a:hover {
   color: var(--smiu-accent);
+}
+
+/* ---------- 12. Small screens ---------- */
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .section-padding {
+    padding: 3rem 0;
+  }
 }
