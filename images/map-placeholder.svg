@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="Map placeholder">
+  <rect width="800" height="400" fill="#e8eef0"/>
+  <g stroke="#ffffff" stroke-width="18" fill="none">
+    <path d="M0 120h800 M0 290h800 M180 0v400 M520 0v400"/>
+  </g>
+  <g stroke="#ffffff" stroke-width="8" fill="none">
+    <path d="M0 210h800 M350 0v400 M680 0v400 M60 0l300 400"/>
+  </g>
+  <rect x="380" y="140" width="120" height="130" rx="6" fill="#cfd8dc"/>
+  <rect x="560" y="150" width="90" height="120" rx="6" fill="#d7e4d1"/>
+  <rect x="210" y="300" width="120" height="80" rx="6" fill="#d7e4d1"/>
+  <g transform="translate(372 96) scale(2.4)" fill="#7a1f2b" stroke="#ffffff" stroke-width="1">
+    <path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/>
+    <circle cx="12" cy="10" r="2.6" fill="#ffffff"/>
+  </g>
+  <text x="400" y="380" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-size="20" fill="#455a64">SMIU, Aiwan-e-Tijarat Road, Karachi</text>
+</svg>
